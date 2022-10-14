@@ -11,7 +11,7 @@ function App() {
                 target={[-742921, -1043242, 0]}>
             <Extensions.MetacityTreeLayer 
                 api="https://data.metacity.cc/pragueTreesTree"
-                instance="/tree.glb"
+                instance="http://localhost:5174/tree.glb" //TODO reapir
                 size={20}
                 swapDistance={4000}
                 color={0x00728a}
