@@ -21,6 +21,12 @@ export function Overview() {
             <h2>Prague: Area Utilization</h2>
             <div className="desc">Visualization of a flat area utilization model with 3D buildings on top of it.</div>
         </Link>
+        <Link className="project" to="lamps">
+            <div className="cover" style={{
+                backgroundImage: "url(/lamps.png)"}}></div>
+            <h2>Prague: Lamps</h2>
+            <div className="desc">Visualization of lamp placement in Prague.</div>
+        </Link>
         </div>
     </div>
     )

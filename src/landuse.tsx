@@ -16,12 +16,12 @@ export function Landuse() {
             background={0xFFFFFF}
             target={[-742921, -1043242, 0]}
             invertColors
-            antialias
+            
             >
             <Extensions.MetacityTreeLayer
                 api="https://data.metacity.cc/pragueTreesFlatTree"
                 instance="/tree.glb"
-                size={20}
+                size={1}
                 swapDistance={4000}
                 color={0x1ae310}
                 tree={{
@@ -37,8 +37,8 @@ export function Landuse() {
             />
             <Extensions.MetacityTreeLayer
                 api="https://data.metacity.cc/pragueUtilizationTree"
+                //enableUI
                 pickable
-                enableUI
                 color={0xFFFFFF}
                 styles={[
                     new Utils.Styles.Style().add(new Utils.Styles.StyleAttributeEqualTo({ attribute: "CTVUK_KOD", value: 100}))  .useColor(0xFFE5CC), //hospodářská půda
@@ -78,8 +78,6 @@ export function Landuse() {
                     //visualizeTree: false
                 }}
             >
-                <div id="legend">
-                </div>
             </Extensions.MetacityTreeLayer>
         </MetacityGL>
     )

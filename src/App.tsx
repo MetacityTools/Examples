@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 import { Heights } from './heights';
+import { Lamps } from './lamps';
 import { Landuse } from './landuse';
 import { Overview } from './Overview';
 
@@ -15,6 +16,7 @@ function App() {
                 <Route index element={<Overview />} />
                 <Route path="heights" element={<Heights />} />
                 <Route path="flat" element={<Landuse />} />
+                <Route path="lamps" element={<Lamps />} />
                 <Route path="*" element={<Overview />} />
             </Route>
             </Routes>

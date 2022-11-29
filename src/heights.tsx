@@ -16,11 +16,12 @@ export function Heights() {
         <MetacityGL
             //background={0x151d29}
             background={0x151515}
-            target={[-742921, -1043242, 0]}>
+            target={[-742921, -1043242, 0]}
+        >
             <Extensions.MetacityTreeLayer
                 api="https://data.metacity.cc/pragueTreesTree"
                 instance="/tree.glb"
-                size={20}
+                size={1}
                 swapDistance={4000}
                 color={0x00728a}
                 tree={{
@@ -60,16 +61,16 @@ export function Heights() {
                     zOffset: 5
                 }}
             >
-                <div id="legend">
-                    <h2>Prague: Building Heights</h2>
-                    <div id="map">
-                        <div id="colormap"></div>
-                        <div id="labels">
-                            <div>20 m and below</div>
-                            <div>50 m and up</div>
-                        </div>
+            <div id="legend">
+                <h2>Prague: Building Heights</h2>
+                <div id="map">
+                    <div id="colormap"></div>
+                    <div id="labels">
+                        <div>20 m and below</div>
+                        <div>50 m and up</div>
                     </div>
                 </div>
+            </div>
             </Extensions.MetacityTreeLayer>
         </MetacityGL>
     )
